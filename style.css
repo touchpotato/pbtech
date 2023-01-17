@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    font-size: 4rem;
+    color: #0d4f77;
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    /* background-color: #0d4f77; */
+    /* background-color: #ea2a2a; */
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    /* background-color: #0d4f77; */
+    background-color: black;
+    padding: 1rem 5rem;
+}
+
+.nav-bar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li
+{
+    padding: 1rem 0.5rem;
+}
+
+#logo
+{
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+a
+{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+a:hover
+{
+    color: #ffffff
+}
+
+.cover-img
+{
+    width: 100%;
+    height: 20rem;
+    background-image: url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-rtx-4090-100vp-l@2x.jpg");
+    background-size: cover;
+    background-position: 0 60%;
+
+}
+
+.container
+{
+    width: 100%;
+    margin: auto;
+}
+
+.container h1
+{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
