@@ -10,6 +10,16 @@
 h1
 {
     font-size: 4rem;
+}
+
+h3
+{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3
+{
     color: #0d4f77;
     font-family: 'Roboto', sans-serif;
 }
@@ -24,14 +34,17 @@ body
 
 nav
 {
+    background-color: #0d4f77;
+}
+
+nav .container
+{
     display: flex;
     align-items: center;
-    /* background-color: #0d4f77; */
-    background-color: black;
     padding: 1rem 5rem;
 }
 
-.nav-bar
+.nav-bar, .row
 {
     width: 100%;
     display: flex;
@@ -45,7 +58,12 @@ nav ul
     align-items: center;
 }
 
-ul li
+ul
+{
+    list-style: none;
+}
+
+nav ul li
 {
     padding: 1rem 0.5rem;
 }
@@ -63,6 +81,40 @@ a
     color: #c0c0c0;
 }
 
+#search-box
+{
+    position: absolute;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #0d4f77;
+    display: none;
+    height: 1.5rem;
+    top: 102px;
+}
+
+#search-box input
+{
+    border: none;
+    height: 100%;
+    font-size: 1rem;
+}
+
+input:hover, input:focus
+{
+    outline: none;
+    border: none;
+}
+
+::placeholder
+{
+    color: #c0c0c0;
+}
+
+.bold
+{
+    font-weight: 900;
+}
+
 a:hover
 {
     color: #ffffff
@@ -71,11 +123,29 @@ a:hover
 .cover-img
 {
     width: 100%;
-    height: 20rem;
-    background-image: url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-rtx-4090-100vp-l@2x.jpg");
+    height: 30rem;
+    background-image: url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg");
     background-size: cover;
-    background-position: 0 60%;
+}
 
+.btn
+{
+    background-color: #1472ad;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: all 300ms ease;
+}
+
+.btn:hover
+{
+    background-color: #0d4f77;
+}
+
+.btn a
+{
+    color: #ffffff;
+    padding: 1rem;
 }
 
 .container
@@ -87,7 +157,107 @@ a:hover
 .container h1
 {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
+hr
+{
+    margin: 1rem auto;
+    outline: none;
+    border: 1px solid #c0c0c0;
+}
 
+.category
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.card
+{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+.card .center
+{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.card>ul>li>a
+{
+    font-size: 14px;
+    color: #1472ad;
+}
+
+.card>ul>li>a:hover
+{
+    border-bottom: 1px solid #1472ad;
+}
+
+.card-sale
+{
+    text-align: center;
+}
+
+.card-sale .btn
+{
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.cover-img
+{
+    background-image: url("https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4090/geforce-ada-4090-web-og-1200x630.jpg");
+    background-size: cover;
+    background-position: 0 -3rem;
+}
+
+@media (min-width: 576px) {
+    .container
+    {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container
+    {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container
+    {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container
+    {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .container
+    {
+      max-width: 1380px;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .container
+    {
+      max-width: 1520px;
+    }
+  }
